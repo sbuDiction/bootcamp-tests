@@ -1,13 +1,11 @@
 describe('yearsAgo' , function(){
-    it('takes in a year and return how many years ago that was' , function(){
-        assert.equal(2,2);
+    it('should return the total for the  year 1976' , function(){
+        assert.equal(yearsAgo(year), 43);
 
-        assert.deepEqual([2,2],[2,2]);
     });
-    it('calculates and returns the total' , function(){
-        assert.equal(2,2);
+    it('should return the total for the year 2000 ' , function(){
+        assert.equal(yearsAgo(years), 19);
 
-        assert.deepEqual([2,2],[2,2]);
     });
 
 });

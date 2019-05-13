@@ -1,5 +1,4 @@
-function transportFee(price)
-{
+function transportFee(price){
   console.log(price);
   switch(price)
          {
@@ -10,4 +9,7 @@ function transportFee(price)
     		case 'nightshift':
       			return 'free';
          }
-}
+
+		}
+
+

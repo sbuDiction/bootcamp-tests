@@ -1,8 +1,12 @@
 describe('transportFee' , function(){
-    it('returns the right price based on the shift you are working' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+    it('should return "R20" if the shift is morning' , function(){
+        assert.equal(transportFee("morning"), "R20")
+    });
+    it('shuld return "R10" if the shift is afternoon' , function(){
+        assert.equal(transportFee("afternoon"), "R10");
+    });
+    it('should return "free" if the shift is nightshift' , function(){
+        assert.equal(transportFee("nightshift"), "free");
     });
 
 });

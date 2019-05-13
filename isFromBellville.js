@@ -1,6 +1,8 @@
 function isFromBellville(name) {
  if(name.startsWith('CY')){
-  return true;}
+  return true;
+}
     else{
-    return false}
+    return false
+  }
 };

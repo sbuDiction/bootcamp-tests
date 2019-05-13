@@ -1,15 +1,13 @@
 describe('totalPhoneBill' , function(){
-    it('takes in a string calls made and smss sent and returns total bill' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+    it('should return the cost for each sms' , function(){
+        assert.equal(totalPhoneBill("sms"), "R0.65");
     }); 
-    it('totalPhoneBill' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+    it('should return the cost for calls' , function(){
+        assert.equal(totalPhoneBill("call"), "R2.75");
     });
-
+    it('should return the total cost of the bill' , function(){
+        assert.equal(totalPhoneBill(), "R7.45");
+    });
 
 });
 

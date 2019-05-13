@@ -1,13 +1,7 @@
 describe('countRegNumber' , function(){
-   it('returns the number of registration numbers in the string' , function(){
-        assert.equal(2,2);
+   it('should return the number of registration numbers in the string' , function(){
+        assert.equal(countRegNumber('CA 182736,CY 523519,CJ 812328'), 3);
 
-        assert.deepEqual([2,2],[2,2]);
-    });
-    it('iterates and checks each array' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
     });
 
 });

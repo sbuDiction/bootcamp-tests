@@ -1,18 +1,12 @@
 describe('regCheck' , function(){
-    it('check if a registration number is for GP, L, EC, MP registration plates' , function(){
-        assert.equal(2,2);
+    it('should return true if the plate registration id for GP' , function(){
+        assert.equal(regCheck('DV 23 NB GP', 'GP'), true);
 
-        assert.deepEqual([2,2],[2,2]);
     });
-    it('returns true if its the correct registration plate' , function(){
-        assert.equal(2,2);
 
-        assert.deepEqual([2,2],[2,2]);
-    });
-    it('returns false if its not the correct registration plate' , function(){
-        assert.equal(2,2);
+    it('should return false if registration plate is MP' , function(){
+        assert.equal(regCheck('DV 23 LP GP', 'MP'), false);
 
-        assert.deepEqual([2,2],[2,2]);
     });
 
 });
