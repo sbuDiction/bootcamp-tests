@@ -5,4 +5,4 @@ function regCheck(loc, reg){
     else{
     return false;
     }
-  };
+  }

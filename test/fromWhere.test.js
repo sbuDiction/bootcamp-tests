@@ -1,9 +1,25 @@
 describe('fromWhere' , function(){
-    it('takes a car registration number as a parameter and returns the town the car is from' , function(){
-        assert.equal(2,2);
+    it('should return "Bellville" If the reg number starts with CY' , function(){
+        assert.equal(fromWhere("CY"), "Bellville");
 
-        assert.deepEqual([2,2],[2,2]);
+
     });
+    it('should return "Paarl" If the reg number starts with CJ' , function(){
+        assert.equal(fromWhere("CJ"), "Paarl");
+
+
+    });
+    it('should return "Cape Town" If the reg number starts with CA' , function(){
+        assert.equal(fromWhere("CJ"), "Paarl");
+
+
+    });
+    it('should return "Some other place!" if the reg number is not on the data base' , function(){
+        assert.equal(fromWhere("CC"), "Some other place!");
+
+
+    });
+    
 
 });
 

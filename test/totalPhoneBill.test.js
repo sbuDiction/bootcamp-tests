@@ -1,12 +1,19 @@
 describe('totalPhoneBill' , function(){
-    it('should return the cost for each sms' , function(){
-        assert.equal(totalPhoneBill("sms"), "R0.65");
+    it('should return the total cost for smss' , function(){
+        assert.equal(totalPhoneBill("sms, sms, sms"), "R1.95");
     }); 
-    it('should return the cost for calls' , function(){
-        assert.equal(totalPhoneBill("call"), "R2.75");
+    it('should return the total cost for calls' , function(){
+        assert.equal(totalPhoneBill("call, call"), "R5.50");
     });
-    it('should return the total cost of the bill' , function(){
-        assert.equal(totalPhoneBill(), "R7.45");
+    
+    it('should return "R0.00" if there is no input' , function(){
+    
+        assert.equal(totalPhoneBill(""), "R0.00");
+    });
+    it('should return the total of the phonebill' , function(){
+    
+        assert.equal(totalPhoneBill("call, sms, sms, sms, call"), "R7.45");
+        
     });
 
 });

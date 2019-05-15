@@ -1,5 +1,5 @@
 var totalPhoneBill = function(bill)
-{
+{   
   var phoneBill = bill.split(', ');
   var calls = [];
   var sms = [];
@@ -15,9 +15,13 @@ var totalPhoneBill = function(bill)
     }
     var call = 2.75 * calls.length;
   	var smss = 0.65 * sms.length;
-  	var total = call + smss;
-    var x = total;
-  }console.log(total);
+    var total = call + smss;
+    
+  }
   return 'R' + total.toFixed(2);
   
-}
+};
+
+var bill = "call, sms, call, sms, sms";
+var total = call + smss;
+var total = "R7.45";

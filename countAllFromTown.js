@@ -11,6 +11,6 @@ var countAllFromTown = function(regNu)
   }
   return town.length;
   
-}
+};
 var regNu = 'CL 124,CY 567,CL 345, CJ 456,CL 341';
 
