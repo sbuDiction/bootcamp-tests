@@ -1,9 +1,6 @@
-describe('this test' , function(){
-    it('isFromBellville' , function(){
-        assert.equal(2,2);
-
+describe('mostProfitableDepartment' , function(){
+    it('should return the most prifitable department' , function(){
         assert.deepEqual([2,2],[2,2]);
     });
 
 });
-

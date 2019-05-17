@@ -1,9 +1,14 @@
-/*describe('findItemsOver20' , function(){
+describe('findItemsOver20' , function(){
     it('should return items over 20' , function(){
-        assert.equal(findItemsOver20([{"name":"pears","qty":37},{"name":"bananas","qty":27}]));
-        
+      assert.deepEqual(findItemsOver20([{"name":"bananas","qty":27},{"name":"apples","qty":3}]), [{"name":"bananas","qty":27}]);
+
+
+    });
+
+    it('should return an empty array"[ ]" if the items are below 20' , function(){
+      assert.deepEqual(findItemsOver20([{"name":"bananas","qty":19},{"name":"apples","qty":18}]), []);
+
 
     });
 
 });
-*/

@@ -1,9 +1,8 @@
-describe('this test' , function(){
-    it('isFromBellville' , function(){
-        assert.equal(2,2);
+describe('findItemsOver' , function(){
+    it('should return items ' , function(){
 
-        assert.deepEqual([2,2],[2,2]);
+
+        assert.deepEqual(findItemsOver(),);
     });
 
 });
-
