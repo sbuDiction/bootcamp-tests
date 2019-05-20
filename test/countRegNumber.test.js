@@ -3,6 +3,10 @@ describe('countRegNumber' , function(){
         assert.equal(countRegNumber('CA 182736,CY 523519,CJ 812328'), 3);
 
     });
+    it('should return only one if the is nothing in the peremeter' , function(){
+        assert.equal(countRegNumber(''), 1);
+
+    });
 
 });
 

@@ -1,4 +1,5 @@
-function greet(name){
-  /*console.log('Hello, ' + name); */
+function greet(name,surname)
+{
   return 'Hello, ' + name;
-};
+}
+
