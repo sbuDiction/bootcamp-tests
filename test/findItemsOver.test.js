@@ -1,8 +1,17 @@
 describe('findItemsOver' , function(){
-    it('should return items ' , function(){
+    it('should return items which have high quantity of over 20' , function(){
 
 
-        assert.deepEqual(findItemsOver(),);
+        assert.deepEqual(findItemsOver([{"name":"bananas","qty":19},{"name":"apples","qty":37}], 20), [{"name":"apples","qty":37}]);
     });
+    it('should return nothing if the items are below the quantity  ' , function(){
+
+        assert.deepEqual(findItemsOver([{"name":"bananas","qty":19},{"name":"apples","qty":10}], 20), []);
+
+
+    });
+
+
+   
 
 });
